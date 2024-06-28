@@ -1,0 +1,89 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: pink;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 100%;
+            height: 100%;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+            color: rgb(139, 135, 222);
+        }
+        label, input, select {
+            margin: 5px 0;
+        }
+        .gender-container {
+            display: flex;
+            align-items: center;
+        }
+        .gender-container label, .gender-container input {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Contact Info</h1>
+        <form action="your-php-server-endpoint" method="post">
+            <label for="fname">First Name:</label>
+            <input type="text" name="fname" id="fname" required>
+
+            <label for="lname">Last Name:</label>
+            <input type="text" name="lname" id="lname" required>
+
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required>
+
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password" required>
+
+            <label for="dob">Date Of Birth:</label>
+            <input type="date" name="dob" id="dob" required>
+
+            <label for="phno">Phone No:</label>
+            <input type="number" name="phno" id="phno" required>
+
+            <label for="qualification">Qualification:</label>
+            <select name="qualification" id="qualification" required>
+                <option value="">Select</option>
+                <option value="10th">10th</option>
+                <option value="plus2">Plus Two</option>
+                <option value="plus3">Graduation</option>
+                <option value="MCA">MCA</option>
+                <option value="other">Other</option>
+            </select>
+
+            <div class="gender-container">
+                <label>Gender:</label>
+                <input type="radio" name="gender" id="male" value="male" required>
+                <label for="male">Male</label>
+                <input type="radio" name="gender" id="female" value="female" required>
+                <label for="female">Female</label>
+                <input type="radio" name="gender" id="other" value="other" required>
+                <label for="other">Other</label>
+            </div>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
+
