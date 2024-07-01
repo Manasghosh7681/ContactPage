@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+         margin: 0;
+       
+    }
+    </style>
+    <link rel="stylesheet" href="Regstyle.css">
+    
+</head>
+    <body>
+        <div class="background-image">
+        <form  action="php server" method="post">
+            <fieldset>
+            <div class="input-align" >Profile Picture
+                <input type="file" name="profile_picture" accept="image/*" required>
+            </div>
+            <div class="input-align">
+                <label for="name">Name :</label>
+                <input type="text" name="name" id="name" required>
+            </div>
+            <div class="input-align">
+                <label for="roll">Roll :</label>
+                <input  type="number" name="roll" id="roll" inputmode="numeric"  required>
+            </div>
+            <div class="input-align">
+                <label for="email">Email :</label>
+                <input type="email" name="email" id="email" required>
+            </div>
+            <div class="input-align">
+                <label for="password">Password :</label>
+                <input type="password" name="password" id="password" required>
+            </div >
+            <div class="input-align">
+                <label for="gender">Gender :</label>
+                <input type="radio" name="gender" id="gender" required>Male
+                <input type="radio" name="gender" id="gender" required>Female 
+                <input type="radio" name="gender" id="gender" required>Other 
+            </div>
+            <div class="input-align">
+                <label for="department">Department :</label>
+                <select name="department" id="department" required>
+                    <option value="">select department</option>
+                    <optgroup label="Engeenering">
+                        <option value="mca">MCA</option>
+                        <option value="ECE">ECE</option>
+                    </optgroup>
+                    <optgroup label="science">
+                        <option value="math">MATH</option>
+                        <option value="phy">physics</option>
+                        <option value="che">chemistry</option>
+                    </optgroup>
+                </select>
+            </div>
+            <div class="input-align">
+                <label for="address">Address :</label>
+                <textarea type="text" rows="5" cols="20" required></textarea required>
+            </div>
+            <div class="input-align">
+                <label for="date">Date :</label>
+                <input type="date" name="date" id="date" required>
+            </div>
+            <div class="input-align">
+                <label for="age">Are you 18 ?</label>
+                <input type="checkbox" name="age" id="age" required>
+            </div>
+            <input type="reset" value="reset button">
+            <button type="submit" >submit</button>
+        </fieldset>
+        </form>
+        </div>
+    </body>
+</html>
+
+
+
+

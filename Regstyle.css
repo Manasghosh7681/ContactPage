@@ -1,0 +1,28 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url(back.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    /* border: 1px solid red;  */
+}
+.background-image {
+    padding: 30px;
+    background-image: url(background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 1px solid black;
+    /* height: 400px; */
+    /* border: 2px solid red; */
+}
+.input-align{
+    font-size: 3vh;
+    display: flex;
+    margin-bottom: 3px;
+    /* flex-direction: column; */
+}
